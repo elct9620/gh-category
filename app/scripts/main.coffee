@@ -12,7 +12,7 @@ require.config({
       exports: "_"
     },
     github: {
-      deps: ['jquery', 'base64'],
+      deps: ['jquery'],
       exports: "Gh3"
     },
     localStorage: {
@@ -26,7 +26,7 @@ require.config({
     esprima: 'vendor/esprima',
     jquery: 'vendor/jquery.min',
 
-    text: "../components/requirejs-text/text.js",
+    text: "../components/requirejs-text/text",
 
     github: "vendor/gh3",
     backbone: "../components/backbone/backbone-min",
@@ -35,6 +35,9 @@ require.config({
   }
 });
 
-require ['app'], (app)->
+require ['jquery', 'app'], ($, App)->
+
+  $(document).ready ->
+    app = new App
 
 
