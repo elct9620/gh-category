@@ -13,13 +13,16 @@
   "installs_allowed_from": ["*"],
   "appcache_path": "/cache.manifest",
   "locales": {
-    "zh-tw": {
+    "zh-TW": {
       "description": "Github 喜愛專案分類工具",
       "developer": {
-        "name": "蒼時弦也 & 雨夜"
+        "name": "蒼時弦也 & 雨夜",
         "url": "https://github.com/elct9620/gh-category"
       }
     }
   },
-  "default_locale": "zh-tw"
+  "permissions": {
+    "systemXHR": {}
+  },
+  "default_locale": "zh-TW"
 }
