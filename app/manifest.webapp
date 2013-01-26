@@ -1,0 +1,25 @@
+{
+  "version": "0.1",
+  "name": "Github Category",
+  "description": "A tools for category github stared project",
+  "launch_path": "/index.html",
+  "icons": {
+    "128": "/facivon-128.png"
+  },
+  "developer": {
+    "name": "Aotoki & Kiras",
+    "url": "https://github.com/elct9620/gh-category"
+  },
+  "installs_allowed_from": ["*"],
+  "appcache_path": "/cache.manifest",
+  "locales": {
+    "zh-tw": {
+      "description": "Github 喜愛專案分類工具",
+      "developer": {
+        "name": "蒼時弦也 & 雨夜"
+        "url": "https://github.com/elct9620/gh-category"
+      }
+    }
+  },
+  "default_locale": "zh-tw"
+}
