@@ -1,4 +1,4 @@
-define ['backbone', 'router', 'views/Main'], (Backbone, Router, MainView)->
+define ['backbone', 'router', 'views/Main', 'views/Categories'], (Backbone, Router, MainView, CategoriesView)->
 
   class App
 
@@ -9,6 +9,7 @@ define ['backbone', 'router', 'views/Main'], (Backbone, Router, MainView)->
       @router = new Router
 
       @mainView = new MainView
+      new CategoriesView
 
       #Backbone.history.start({pushState: true, root: '/'})
       Backbone.history.start()

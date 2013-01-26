@@ -1,5 +1,5 @@
 define ['jquery', 'backbone', 'require',
-        'controllers/Search', 'controllers/ListCategories', 'controllers/ListRepositories'], ($, Backbone, require) ->
+        'controllers/Search', 'controllers/ListCategories', 'controllers/ListRepositories', 'views/Categories'], ($, Backbone, require) ->
 
   Router = Backbone.Router.extend {
     routes: {
@@ -12,16 +12,23 @@ define ['jquery', 'backbone', 'require',
     }
 
     index: ()->
+      Cat = require('views/Categories')
+      new Cat
 
     search: ()->
-      console.log "Hello"
       Search = require('controllers/Search')
       search = new Search
-      console.log search
 
     categories: ()->
 
-    category: ()->
+    category: (name)->
+
+      if name
+        Search = require('controllers/Search')
+        search = new Search
+        search.doSearch(name)
+
+
 
     repository: ()->
   }

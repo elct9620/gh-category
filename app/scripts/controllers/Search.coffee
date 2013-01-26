@@ -1,6 +1,10 @@
 define ['jquery', 'underscore', 'views/Search'], ($, _, SearchView) ->
 
   class Search
+    @search = null
 
     constructor: ->
-      new SearchView
+      @search = new SearchView
+
+    doSearch: (name)->
+      @search.doSearch(name)
