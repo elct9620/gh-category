@@ -14,6 +14,10 @@ require.config({
     github: {
       deps: ['jquery', 'base64'],
       exports: "Gh3"
+    },
+    localStorage: {
+      deps: ['backbone'],
+      exports: "localStorage"
     }
   },
 
@@ -22,10 +26,12 @@ require.config({
     esprima: 'vendor/esprima',
     jquery: 'vendor/jquery.min',
 
+    text: "../components/requirejs-text/text.js",
+
     github: "vendor/gh3",
-    base64: "../components/github/lib/base64",
     backbone: "../components/backbone/backbone-min",
     underscore: "../components/underscore/underscore-min"
+    localStorage: "../components/backbone.localStorage/backbone.localStorage-min"
   }
 });
 
