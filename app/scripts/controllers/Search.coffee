@@ -1,1 +1,6 @@
-define ['jquery', 'underscore', 'github', 'backbone'], ($, _, Gh3, Backbone) ->
+define ['jquery', 'underscore', 'views/Search'], ($, _, SearchView) ->
+
+  class Search
+
+    constructor: ->
+      new SearchView

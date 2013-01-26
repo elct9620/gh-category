@@ -14,6 +14,10 @@ define ['jquery', 'backbone', 'require',
     index: ()->
 
     search: ()->
+      console.log "Hello"
+      Search = require('controllers/Search')
+      search = new Search
+      console.log search
 
     categories: ()->
 
